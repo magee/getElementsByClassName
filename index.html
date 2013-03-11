@@ -1,0 +1,26 @@
+<!DOCTYPE html> 
+<html>
+  <head>
+    <title>Problem File</title>
+    <script src="problem.js"></script>
+  </head>
+  <body>
+  <span class="test">something here</span>
+  <span class="another">something else</span>
+ 	<div class="test">Whoa!</div>
+ 	<ul>
+ 	 <li>item one</li>
+ 	 <li class="test">item two</li>
+ 	</ul>
+ 	<div id="results">Results should appear here.</div>
+ 	<script>
+ 	 var test_objects = document.getElementsByClassName("test");
+ 	 var outputString = "";
+
+ 	 for (var i = 0; i < test_objects.length; i++) {
+ 	 outputString += " " + test_objects[i].innerHTML;
+ 	 }
+ 	 document.getElementById("results").innerHTML=outputString;
+ 	</script>
+  </body>
+</html>
